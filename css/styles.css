@@ -7,7 +7,7 @@ html {
 body {
   font-family: "Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
   line-height: 1.7;
-  color:#432;
+  color:#222;
 }
 
 a {
@@ -17,49 +17,150 @@ a {
 img {
   max-width: 100%;
 }
+
+ul {
+  list-style:none;
+}
 /* Header部分 */
+
+header {
+  background-color: rgba(128,128,0,0.7);
+  height: 52px;
+  line-height: 50px;
+}
+
+nav {
+  display: flex;
+}
 
 .logo {
   width: 210px;
-  margin-top: 14px;
-}
-header {
-  background-color: #efefef;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
-.container {
-  /*background-color: pink;*/
-  width: 400px;
-  margin: auto;
+.main-nav {
   display: flex;
-  align-items: center;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+
 }
 
-.info {
-  margin-left: 32px;
+.main-nav li{
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: solid 1px silver;
 }
 
-.icon img {
-  border-radius: 50%;
-  border-width: 4px;
-  border-style: solid;
-  border-color: lightgreen;
+.main-nav a{
+  color: #f0f8ff;
+  display: block;
 }
 
-.info h1 {
+.main-nav a:hover{
+  color: orange;
+  border-bottom: solid 2px orange;
+  opacity: 1.0;
+}
+
+.twitter {
+  font-size: 2rem;
+  color: aqua;
+  margin-left: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.home-wrapper {
+  text-align: center;
+  margin-top: 10%;
+  color: white;
+}
+
+.home-wrapper p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+}
+
+.home-title {
+  font-size: 5rem;
+  font-family: 'Philosopher',serif;
+  text-transform: uppercase;
   font-weight: normal;
-  font-size: 24px;
-  margin: 0;
 }
 
-main {
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+.btn {
+  font-size: 1.375rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
 }
 
-main h2 {
-  font-weight: normal;
+.btn:hover {
+  background: #0090aa;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(../images/IMG_0186.jpg);
+  min-height: 100vh;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 50px; */
+  color: black;
+}
+
+.me-img {
+  max-width: 50%;
+}
+
+.me-txt {
+  width: 50%;
+  color: #222;
+  padding: 10px 20px;
+}
+
+.about-img {
+  width: 50%;
+  object-fit: cover;
+  object-position: bottom;
+
+}
+
+.about-txt {
+  width: 50%;
+  padding: 10px 20px;
+}
+
+.works {
+  text-align: center;
+}
+
+footer {
+  background-color: #432;
+  text-align: center;
+  padding: 26px 0px;
+  margin-top: 50px;
+}
+
+footer p {
+  color: #fff;
 }
