@@ -150,8 +150,25 @@ nav {
   padding: 10px 20px;
 }
 
-.works {
+.works-wrapper {
   text-align: center;
+}
+
+.works-contents {
+  display:flex;
+  justify-content: space-around;
+}
+
+.work {
+  width: 30%;
+  height: auto;
+  padding: 0.5%;
+  border: solid 1px gray;
+  margin: 10px 5px;
+}
+
+.work p {
+  font-size: 12px;
 }
 
 footer {
