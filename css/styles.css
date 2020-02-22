@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  text-decoration-color: none;
 }
 
 img {
@@ -80,7 +81,7 @@ nav {
 
 .home-wrapper {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 20%;
   color: white;
 }
 
@@ -151,6 +152,7 @@ nav {
 }
 
 .works-wrapper {
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -180,4 +182,58 @@ footer {
 
 footer p {
   color: #fff;
+}
+
+@media screen and (min-width:480px) {
+  .hum-menu {
+    display: none
+  }
+}
+
+@media screen and (max-width:480px) {
+  body {
+    line-height: 1.2;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hum-menu {
+    font-size: 1.2rem;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+    font-family: 'Philosopher',serif;
+    font-weight: normal;
+  }
+
+  .home-wrapper span {
+    display: block;
+  }
+
+  .home-wrapper p {
+    margin: 0px 0px;
+  }
+
+  .home-title-wrapper {
+    background-color: #00bbdd;
+    opacity: 0.8;
+    padding: 10px 0px;
+    border-radius: 25%;
+    margin-bottom: 50px;
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  #home {
+    background-image: url(../images/res-img.png);
+    background-position:left center;
+  }
 }
