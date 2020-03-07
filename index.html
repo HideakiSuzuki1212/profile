@@ -29,10 +29,9 @@
               </ul>
             </div>
           </nav>
-
       </header>
       <main>
-        <div class="card">
+        <figure class="card">
           <img src="images/IMG_0186.jpg" class="card-img" alt="home-image">
           <div class="card-img-overlay d-flex flex-column justify-content-center">
             <div class="container">
@@ -50,7 +49,7 @@
               <button type="button" class="btn btn-primary mt-4 mx-auto d-block "><a href="#about" class="text-white">どんな人なのか見てみる</a></button>
             </div>
           </div>
-        </div>
+        </figure>
 
         <section>
           <h1 id="about" class="text-center mt-5 mb-5">私ってこんな人</h1>
@@ -92,6 +91,28 @@
               </div>
             </div>
         </section>
+
+        <div class="container">
+          <h3 class="mt-5 text-center">お問い合わせ</h3>
+          <form action="index.html" method="post">
+            <div class="form-group">
+              <label for="name">お名前</label>
+              <input type="email" class="form-control" id="name" placeholder="こちらにお名前をお願いします">
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス</label>
+              <input type="text" class="form-control" id="email" placeholder="example@gmail.com">
+              <small class="text-muted">返信以外にメールアドレスを使用することはありません。</small>
+            </div>
+            <div class="form-group">
+              <label for="message">お問い合わせ内容</label>
+              <textarea name="message" id="message" class="form-control" rows="8" cols="80"></textarea>
+            </div>
+            <div class="form-group row justify-content-center">
+              <button type="submit" class="btn btn-primary">送信</button>
+            </div>
+          </form>
+        </div>
       </main>
     <footer class="text-center bg-light">
           <p><small>&copy; 2020 Hideaki_Suzuki</small></p>
